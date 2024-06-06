@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let operators = prompt("+ - * / your choice");
+      let num1 = parseInt(prompt("num1"));
+      let num2 = parseInt(prompt("num2"));
+      function calculator() {
+        switch (operators) {
+          case "+":
+            console.log("addition");
+            return num1 + num2;
+            break;
+          case "-":
+            console.log("subtraction");
+            return num1 - num2;
+            break;
+          case "*":
+            console.log("multiplication");
+            return num1 * num2;
+            break;
+          case "/":
+            console.log("division");
+            return num1 / num2;
+            break;
+          default:
+            return "this operators is not valid";
+            break;
+        }
+      }
+      let c = calculator();
+      console.log(c);
+    </script>
+  </body>
+</html>

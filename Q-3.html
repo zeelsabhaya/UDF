@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        let a = parseInt(prompt("Entre A value"))
+        let b = parseInt(prompt("Entre B value"))
+        let c = parseInt(prompt("Entre C value"))
+        let d = parseInt(prompt("Entre D value"))
+      function findGreater() {
+        if (a === b && b === c && c === d && d === a) {
+          console.log("All Number is same");
+        } else {
+          if (a < b) {
+            if (c < b) {
+              if (d < b) {
+                console.log("B is greater");
+              } else {
+                console.log("D is greater");
+              }
+            } else {
+              if (c < d) {
+                console.log("D is greater");
+              } else {
+                console.log("C is greater");
+              }
+            }
+          } else {
+            if (c < a) {
+              if (d < a) {
+                console.log("A is greater");
+              } else {
+                console.log("D is greater");
+              }
+            } else {
+              if (c < d) {
+                console.log("D is greater");
+              } else {
+                console.log("C is greater");
+              }
+            }
+          }
+        }
+      }
+      findGreater();
+    </script>
+  </body>
+</html>

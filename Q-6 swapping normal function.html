@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = parseInt(prompt("Enter A value"));
+      let b = parseInt(prompt("Enter A value"));
+      let c;
+      console.log("swapping of two variables using normal function");
+      function swapping() {
+        console.log("A=", a, "B", b);
+        c = a;  
+        a = b;
+        b = c;
+        console.log("A=", a, "B", b);
+      }
+      swapping()
+    </script>
+  </body>
+</html>

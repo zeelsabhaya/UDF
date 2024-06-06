@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let left = parseInt(prompt("Enter left value"));
+      let right = parseInt(prompt("Enter right value"));
+      let bottum = parseInt(prompt("Enter bottum value"));
+
+      function triangle() {
+        if (left + right + bottum === 180) {
+          return "triangle is valid";
+        } else {
+          return "triangle is not";
+        }
+      }
+      let c = triangle();
+      console.log(c);
+    </script>
+  </body>
+</html>

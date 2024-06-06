@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("swapping of two variables using arrow function");
+      let swapping = (a = 10, b = 20, c) => console.log("A", a, "B", b);
+      c = a;
+      a = b;
+      b = c;
+      console.log("A", a, "B", b);
+      swapping();
+    </script>
+  </body>
+</html>
